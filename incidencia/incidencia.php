@@ -2,7 +2,9 @@
 
     $connection = mysqli_connect("localhost","root","","proyecto_moviles");
     $query =
-    ("SELECT incidencia.descripcion,
+
+    ("SELECT incidencia.id_incidencia,
+                incidencia.descripcion,
                 incidencia.fecha,
                 incidencia.imagenReferencia,
                 usuario.user,
